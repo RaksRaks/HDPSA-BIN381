@@ -1,0 +1,14 @@
+dataset,n_rows,n_cols
+access-to-health-care_national_zaf,276,29
+anthropometry_national_zaf,38,29
+child-mortality-rates_national_zaf,41,29
+covid-19-prevention_national_zaf,35,29
+dhs-quickstats_national_zaf,53,29
+hiv-behavior_national_zaf,119,29
+immunization_national_zaf,117,29
+iycf_national_zaf,23,29
+literacy_national_zaf,21,29
+maternal-mortality_national_zaf,22,29
+symptoms-of-acute-respiratory-infection-ari_national_zaf,27,29
+toilet-facilities_national_zaf,47,29
+water_national_zaf,101,29
