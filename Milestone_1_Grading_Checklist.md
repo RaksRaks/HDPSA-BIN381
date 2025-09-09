@@ -198,7 +198,7 @@
 
 The Milestone 1 submission as for EDA and Quality we comprehensively addresses all grading criteria with:
 
-1. **Complete data understanding** of 12 South African health datasets
+1. **Complete data understanding** of 13 South African health datasets
 2. **Thorough quality assessment** with detailed metrics and visualizations
 3. **Professional documentation** in Word format with embedded charts
 4. **Reproducible analysis** with well-documented R code
