@@ -194,9 +194,9 @@
 
 ## Summary
 
-**Total Points Expected: 50/50**
 
-The Milestone 1 submission for Member 3 comprehensively addresses all grading criteria with:
+
+The Milestone 1 submission as for EDA and Quality we comprehensively addresses all grading criteria with:
 
 1. **Complete data understanding** of 12 South African health datasets
 2. **Thorough quality assessment** with detailed metrics and visualizations
@@ -208,6 +208,5 @@ The submission demonstrates strong technical competency in data analysis, profes
 
 ---
 
-**Prepared by:** Member 3 (Data Understanding Specialist)  
-**Review Date:** February 2025  
-**Status:** Ready for Submission
+**Prepared by:** Member 3 
+
