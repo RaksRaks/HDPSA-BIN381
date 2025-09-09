@@ -7,7 +7,7 @@
 
 ---
 
-## Grading Criteria Compliance (50 points total)
+## Grading Criteria Compliance
 
 ### 1. Background (5 points) ✅
 **Status: COMPLETED**
