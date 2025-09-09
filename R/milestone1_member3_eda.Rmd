@@ -22,14 +22,14 @@ library(stringr)
 ```
 
 ```{r paths}
-input_dir <- "Project Datasets"
-output_dir <- "outputs"
+input_dir <- "../Project Datasets"
+output_dir <- "../outputs"
 dir.create(output_dir, showWarnings = FALSE, recursive = TRUE)
 ```
 
 ## Load datasets
 ```{r load}
-csv_files <- list.files(input_dir, pattern = "\\\.csv$", full.names = TRUE)
+csv_files <- list.files(input_dir, pattern = "\\.csv$", full.names = TRUE)
 stopifnot(length(csv_files) > 0)
 
 # Named list of tibbles
