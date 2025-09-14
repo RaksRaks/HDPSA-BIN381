@@ -1,34 +1,21 @@
----
-title: "Milestone 2 – Member 3: Data Cleaning Process"
-author: "Team HDPSA"
-output:
-  html_document:
-    toc: true
-    number_sections: true
-    toc_depth: 3
----
+# =============================================================================
+# Milestone 2 – Member 3: Data Cleaning Process
+# Team HDPSA
+# =============================================================================
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, fig.width = 10, fig.height = 6)
-```
+# Overview:
+# This script implements comprehensive data cleaning procedures for the South African 
+# health datasets, focusing on missing value imputation, duplicate removal, outlier 
+# detection, and noise handling.
 
-# Data Cleaning Process
+# The data cleaning process addresses the following key issues:
+# - Missing Values: Imputation using multiple strategies (mean, median, regression, KNN)
+# - Duplicates: Identification and removal of duplicate records
+# - Outliers: Detection using IQR and z-score methods with appropriate treatment
+# - Noise: Handling of special values and inconsistent coding schemes
+# - Harmonization: Standardizing categorical variables and coding schemes
 
-This document implements comprehensive data cleaning procedures for the South African health datasets, focusing on missing value imputation, duplicate removal, outlier detection, and noise handling.
-
-## Overview
-
-The data cleaning process addresses the following key issues:
-- **Missing Values**: Imputation using multiple strategies (mean, median, regression, KNN)
-- **Duplicates**: Identification and removal of duplicate records
-- **Outliers**: Detection using IQR and z-score methods with appropriate treatment
-- **Noise**: Handling of special values and inconsistent coding schemes
-- **Harmonization**: Standardizing categorical variables and coding schemes
-
-## Load Required Libraries
-
-```{r libraries}
-# Core libraries
+# Load required libraries
 library(readr)
 library(dplyr)
 library(purrr)
@@ -60,11 +47,14 @@ if(require(corrplot, quietly = TRUE)) {
 } else {
   cat("corrplot package not available - using basic plots\n")
 }
-```
 
-## Load and Prepare Data
+cat("\n=== MILESTONE 2 - MEMBER 3: DATA CLEANING PROCESS ===\n")
 
-```{r load-data}
+# =============================================================================
+# Load and Prepare Data
+# =============================================================================
+cat("Loading and preparing data...\n")
+
 # Set paths
 input_dir <- "../Project Datasets"
 output_dir <- "../outputs/cleaned"
@@ -88,12 +78,12 @@ for(file in csv_files) {
 
 # Filter out any failed loads
 raw_datasets <- raw_datasets[!sapply(raw_datasets, is.null)]
-cat("Successfully loaded", length(raw_datasets), "datasets\n")
-```
+cat("Successfully loaded", length(raw_datasets), "datasets\n\n")
 
-## Initial Data Assessment
+# =============================================================================
+# Data Quality Assessment Functions
+# =============================================================================
 
-```{r initial-assessment}
 # Create comprehensive assessment function
 assess_data_quality <- function(datasets) {
   assessment <- purrr::imap_dfr(datasets, function(df, name) {
@@ -148,63 +138,22 @@ assess_data_quality <- function(datasets) {
   return(assessment)
 }
 
-# Perform initial assessment
+# =============================================================================
+# Initial Data Assessment
+# =============================================================================
+cat("=== INITIAL DATA ASSESSMENT ===\n")
 initial_assessment <- assess_data_quality(raw_datasets)
 print(initial_assessment)
 
 # Save initial assessment
 readr::write_csv(initial_assessment, file.path(output_dir, "initial_data_assessment.csv"))
-```
+cat("Initial assessment saved to: initial_data_assessment.csv\n\n")
 
-## Missing Value Analysis and Imputation
+# =============================================================================
+# Missing Value Analysis and Imputation
+# =============================================================================
+cat("=== MISSING VALUE ANALYSIS AND IMPUTATION ===\n")
 
-### Missing Value Patterns
-
-```{r missing-patterns}
-# Visualize missing value patterns
-missing_plots <- list()
-
-for(i in 1:min(4, length(raw_datasets))) {
-  dataset_name <- names(raw_datasets)[i]
-  df <- raw_datasets[[i]]
-  
-  # Create missing value pattern plot
-  missing_data <- is.na(df)
-  missing_summary <- colSums(missing_data)
-  missing_pct <- round(100 * missing_summary / nrow(df), 2)
-  
-  missing_df <- data.frame(
-    variable = names(missing_summary),
-    missing_count = missing_summary,
-    missing_pct = missing_pct
-  ) %>%
-    filter(missing_count > 0) %>%
-    arrange(desc(missing_pct))
-  
-  if(nrow(missing_df) > 0) {
-    p <- ggplot(missing_df, aes(x = reorder(variable, missing_pct), y = missing_pct)) +
-      geom_col(fill = "steelblue", alpha = 0.7) +
-      coord_flip() +
-      labs(
-        title = paste("Missing Values in", dataset_name),
-        x = "Variables",
-        y = "Missing Percentage (%)"
-      ) +
-      theme_minimal()
-    
-    missing_plots[[dataset_name]] <- p
-  }
-}
-
-# Display plots
-if(length(missing_plots) > 0) {
-  do.call(grid.arrange, c(missing_plots, ncol = 2))
-}
-```
-
-### Missing Value Imputation Strategies
-
-```{r missing-imputation}
 # Function to apply multiple imputation strategies
 impute_missing_values <- function(df, dataset_name) {
   cat("Processing missing values for:", dataset_name, "\n")
@@ -272,11 +221,13 @@ imputed_datasets <- list()
 for(name in names(raw_datasets)) {
   imputed_datasets[[name]] <- impute_missing_values(raw_datasets[[name]], name)
 }
-```
+cat("\n")
 
-## Duplicate Detection and Removal
+# =============================================================================
+# Duplicate Detection and Removal
+# =============================================================================
+cat("=== DUPLICATE DETECTION AND REMOVAL ===\n")
 
-```{r duplicate-removal}
 # Function to handle duplicates
 remove_duplicates <- function(df, dataset_name) {
   cat("Processing duplicates for:", dataset_name, "\n")
@@ -305,13 +256,13 @@ deduplicated_datasets <- list()
 for(name in names(imputed_datasets)) {
   deduplicated_datasets[[name]] <- remove_duplicates(imputed_datasets[[name]], name)
 }
-```
+cat("\n")
 
-## Outlier Detection and Treatment
+# =============================================================================
+# Outlier Detection and Treatment
+# =============================================================================
+cat("=== OUTLIER DETECTION AND TREATMENT ===\n")
 
-### Outlier Detection Methods
-
-```{r outlier-detection}
 # Function to detect outliers using multiple methods
 detect_outliers <- function(df, dataset_name) {
   cat("Detecting outliers for:", dataset_name, "\n")
@@ -364,11 +315,7 @@ outlier_results <- list()
 for(name in names(deduplicated_datasets)) {
   outlier_results[[name]] <- detect_outliers(deduplicated_datasets[[name]], name)
 }
-```
 
-### Outlier Treatment
-
-```{r outlier-treatment}
 # Function to treat outliers
 treat_outliers <- function(df, dataset_name, method = "winsorize") {
   cat("Treating outliers for:", dataset_name, "using", method, "method\n")
@@ -444,11 +391,13 @@ for(name in names(deduplicated_datasets)) {
   result <- treat_outliers(deduplicated_datasets[[name]], name, method = "winsorize")
   outlier_treated_datasets[[name]] <- result$data
 }
-```
+cat("\n")
 
-## Noise Detection and Special Value Handling
+# =============================================================================
+# Noise Detection and Special Value Handling
+# =============================================================================
+cat("=== NOISE DETECTION AND SPECIAL VALUE HANDLING ===\n")
 
-```{r noise-handling}
 # Function to handle noise and special values
 handle_noise <- function(df, dataset_name) {
   cat("Handling noise and special values for:", dataset_name, "\n")
@@ -524,11 +473,13 @@ for(name in names(outlier_treated_datasets)) {
   result <- handle_noise(outlier_treated_datasets[[name]], name)
   noise_cleaned_datasets[[name]] <- result$data
 }
-```
+cat("\n")
 
-## Data Harmonization
+# =============================================================================
+# Data Harmonization
+# =============================================================================
+cat("=== DATA HARMONIZATION ===\n")
 
-```{r harmonization}
 # Function to harmonize categorical variables
 harmonize_data <- function(df, dataset_name) {
   cat("Harmonizing data for:", dataset_name, "\n")
@@ -595,11 +546,13 @@ final_cleaned_datasets <- list()
 for(name in names(noise_cleaned_datasets)) {
   final_cleaned_datasets[[name]] <- harmonize_data(noise_cleaned_datasets[[name]], name)
 }
-```
+cat("\n")
 
-## Before/After Comparison
+# =============================================================================
+# Before/After Comparison
+# =============================================================================
+cat("=== BEFORE/AFTER COMPARISON ===\n")
 
-```{r comparison}
 # Create comprehensive before/after comparison
 create_comparison_report <- function(original, cleaned, dataset_name) {
   # Original assessment
@@ -655,18 +608,22 @@ if(length(comparison_reports) > 0) {
   
   # Save comparison report
   readr::write_csv(all_comparisons, file.path(output_dir, "before_after_comparison.csv"))
+  cat("Comparison report saved to: before_after_comparison.csv\n")
 }
-```
+cat("\n")
 
-## Final Data Quality Assessment
+# =============================================================================
+# Final Data Quality Assessment
+# =============================================================================
+cat("=== FINAL DATA QUALITY ASSESSMENT ===\n")
 
-```{r final-assessment}
 # Perform final assessment on cleaned data
 final_assessment <- assess_data_quality(final_cleaned_datasets)
 print(final_assessment)
 
 # Save final assessment
 readr::write_csv(final_assessment, file.path(output_dir, "final_data_assessment.csv"))
+cat("Final assessment saved to: final_data_assessment.csv\n")
 
 # Create improvement summary
 improvement_summary <- data.frame(
@@ -681,11 +638,13 @@ improvement_summary <- data.frame(
 
 print(improvement_summary)
 readr::write_csv(improvement_summary, file.path(output_dir, "improvement_summary.csv"))
-```
+cat("Improvement summary saved to: improvement_summary.csv\n\n")
 
-## Save Cleaned Datasets
+# =============================================================================
+# Save Cleaned Datasets
+# =============================================================================
+cat("=== SAVING CLEANED DATASETS ===\n")
 
-```{r save-cleaned}
 # Save all cleaned datasets
 for(name in names(final_cleaned_datasets)) {
   filename <- paste0(name, "_cleaned.csv")
@@ -696,13 +655,11 @@ for(name in names(final_cleaned_datasets)) {
 
 # Save RDS format for R users
 saveRDS(final_cleaned_datasets, file.path(output_dir, "all_cleaned_datasets.rds"))
-cat("Saved all cleaned datasets as RDS file\n")
-```
+cat("Saved all cleaned datasets as RDS file\n\n")
 
-## Data Cleaning Summary Report
-
-```{r summary-report}
-# Generate comprehensive summary report
+# =============================================================================
+# Data Cleaning Summary Report
+# =============================================================================
 cat("=== DATA CLEANING SUMMARY REPORT ===\n\n")
 
 cat("Total datasets processed:", length(raw_datasets), "\n")
@@ -734,7 +691,8 @@ cat("CLEANING METHODS APPLIED:\n")
 cat("1. Missing Value Imputation:\n")
 cat("   - Mean imputation for numeric variables\n")
 cat("   - Mode imputation for categorical variables\n")
-cat("   - KNN imputation for mixed datasets\n\n")
+cat("   - KNN imputation for mixed datasets (if available)\n")
+cat("   - Median imputation as fallback\n\n")
 
 cat("2. Duplicate Removal:\n")
 cat("   - Exact duplicate detection and removal\n\n")
@@ -755,15 +713,8 @@ cat("OUTPUT FILES GENERATED:\n")
 cat("- Cleaned datasets: *_cleaned.csv\n")
 cat("- Assessment reports: initial_data_assessment.csv, final_data_assessment.csv\n")
 cat("- Comparison reports: before_after_comparison.csv, improvement_summary.csv\n")
-cat("- RDS file: all_cleaned_datasets.rds\n")
-```
+cat("- RDS file: all_cleaned_datasets.rds\n\n")
 
-## Notes and Recommendations
-
-- **Missing Values**: Applied multiple imputation strategies based on data type and distribution
-- **Outliers**: Used winsorization to preserve data while reducing extreme values
-- **Duplicates**: Removed exact duplicates while preserving data integrity
-- **Harmonization**: Standardized categorical variables for consistency across datasets
-- **Quality Control**: All cleaning steps documented with before/after comparisons
-
-The cleaned datasets are now ready for feature selection and transformation in the next phase of the data preparation process.
+cat("=== DATA CLEANING PROCESS COMPLETE ===\n")
+cat("The cleaned datasets are now ready for feature selection and transformation\n")
+cat("in the next phase of the data preparation process.\n")
