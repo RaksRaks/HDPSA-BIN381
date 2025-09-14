@@ -1,0 +1,14 @@
+dataset,n_rows,n_cols,missing_count,missing_pct,duplicate_count,duplicate_pct,numeric_cols,character_cols,factor_cols,outlier_count
+access-to-health-care_national_zaf,276,29,1199,14.98,0,0,8,17,0,0
+anthropometry_national_zaf,38,29,211,19.15,0,0,8,17,0,0
+child-mortality-rates_national_zaf,41,29,210,17.66,0,0,10,17,0,30
+covid-19-prevention_national_zaf,35,29,192,18.92,0,0,8,17,0,14
+dhs-quickstats_national_zaf,53,29,267,17.37,0,0,10,17,0,48
+hiv-behavior_national_zaf,119,29,685,19.85,0,0,8,17,0,31
+immunization_national_zaf,117,29,554,16.33,0,0,8,17,0,26
+iycf_national_zaf,23,29,132,19.79,0,0,8,17,0,4
+literacy_national_zaf,21,29,122,20.03,0,0,8,17,0,0
+maternal-mortality_national_zaf,22,29,151,23.67,0,0,10,17,0,0
+symptoms-of-acute-respiratory-infection-ari_national_zaf,27,29,138,17.62,0,0,8,17,0,0
+toilet-facilities_national_zaf,47,29,256,18.78,0,0,8,17,0,0
+water_national_zaf,101,29,526,17.96,0,0,8,17,0,0
