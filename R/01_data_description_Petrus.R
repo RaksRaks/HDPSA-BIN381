@@ -7,17 +7,37 @@
 ## - Saves simple base-R plots (hist, boxplot, barplot) as PNGs
 
 ## -------- PROJECT PATHS --------
-# Use Project Datasets folder directly
-input_dir <- "Project Datasets"
-output_dir <- "outputs/person1"
+# Debug: show current working directory
+cat("Current working directory:", getwd(), "\n")
 
-# Create output directory if it doesn't exist
-if (!dir.exists(output_dir)) dir.create(output_dir, recursive = TRUE)
+# Try multiple possible locations for Project Datasets
+possible_paths <- c(
+  "Project Datasets",
+  "../Project Datasets", 
+  "./Project Datasets",
+  file.path(dirname(getwd()), "Project Datasets")
+)
 
-# Verify input directory exists
-if (!dir.exists(input_dir)) {
-  stop("Project Datasets folder not found. Make sure you're running from the project root directory.")
+# Find the first existing path
+input_dir <- NULL
+for (path in possible_paths) {
+  cat("Checking:", path, "->", dir.exists(path), "\n")
+  if (dir.exists(path)) {
+    input_dir <- path
+    break
+  }
 }
+
+if (is.null(input_dir)) {
+  stop("Project Datasets folder not found in any of these locations:\n", 
+       paste("  -", possible_paths, collapse = "\n"))
+}
+
+cat("Using input_dir:", input_dir, "\n")
+
+# Set output directory
+output_dir <- "outputs/person1"
+if (!dir.exists(output_dir)) dir.create(output_dir, recursive = TRUE)
 
 ## Optional: try to load janitor::clean_names(); else use a tiny fallback
 clean_names <- function(x) {
