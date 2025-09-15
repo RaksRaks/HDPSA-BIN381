@@ -52,10 +52,26 @@ year_names <- c("year","survey_year")
 
 for (f in csv_files) {
   message("Reading: ", f)
-  df <- tryCatch(read.csv(f, stringsAsFactors = FALSE, check.names = FALSE), error = function(e) {
+  df <- tryCatch({
+    # Read the file
+    temp_df <- read.csv(f, stringsAsFactors = FALSE, check.names = FALSE)
+    
+    # Check if second row looks like metadata (starts with #)
+    if (nrow(temp_df) > 1) {
+      second_row <- temp_df[2, ]
+      if (any(grepl("^#", as.character(second_row)))) {
+        # Remove the metadata row
+        temp_df <- temp_df[-2, ]
+        cat("Removed metadata row from", basename(f), "\n")
+      }
+    }
+    
+    temp_df
+  }, error = function(e) {
     cat("Error reading", f, ":", e$message, "\n")
     return(NULL)
   })
+  
   if (is.null(df) || nrow(df) == 0) {
     cat("Skipping", f, "- empty or failed to read\n")
     next
@@ -67,7 +83,13 @@ for (f in csv_files) {
     next
   }
   
-  names(df) <- clean_names(names(df))
+  # Clean column names safely
+  tryCatch({
+    names(df) <- clean_names(names(df))
+  }, error = function(e) {
+    cat("Warning: Could not clean names for", basename(f), "- using original names\n")
+  })
+  
   ds_name <- tools::file_path_sans_ext(basename(f))
   
   ## --- Overview ---
