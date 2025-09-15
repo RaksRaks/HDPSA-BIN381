@@ -1,7 +1,3 @@
-# =============================================================================
-# Milestone 2 – Member 3: Data Cleaning Process
-# Team HDPSA
-# =============================================================================
 
 # Overview:
 # This script implements comprehensive data cleaning procedures for the South African 
@@ -666,12 +662,23 @@ cat("Total datasets processed:", length(raw_datasets), "\n")
 cat("Total datasets cleaned:", length(final_cleaned_datasets), "\n\n")
 
 # Overall statistics
-total_original_rows <- sum(sapply(raw_datasets, nrow))
-total_cleaned_rows <- sum(sapply(final_cleaned_datasets, nrow))
-total_original_missing <- sum(sapply(raw_datasets, function(x) sum(is.na(x))))
-total_cleaned_missing <- sum(sapply(final_cleaned_datasets, function(x) sum(is.na(x))))
-total_original_duplicates <- sum(sapply(raw_datasets, function(x) sum(duplicated(x))))
-total_cleaned_duplicates <- sum(sapply(final_cleaned_datasets, function(x) sum(duplicated(x))))
+# Guarded helpers to ensure numeric outputs even if elements aren't data frames
+safe_nrow <- function(x) {
+  if (is.data.frame(x)) nrow(x) else 0L
+}
+safe_sum_na <- function(x) {
+  if (is.data.frame(x)) sum(is.na(x)) else 0L
+}
+safe_sum_dups <- function(x) {
+  if (is.data.frame(x)) sum(duplicated(x)) else 0L
+}
+
+total_original_rows <- sum(vapply(raw_datasets, safe_nrow, integer(1)))
+total_cleaned_rows <- sum(vapply(final_cleaned_datasets, safe_nrow, integer(1)))
+total_original_missing <- sum(vapply(raw_datasets, safe_sum_na, integer(1)))
+total_cleaned_missing <- sum(vapply(final_cleaned_datasets, safe_sum_na, integer(1)))
+total_original_duplicates <- sum(vapply(raw_datasets, safe_sum_dups, integer(1)))
+total_cleaned_duplicates <- sum(vapply(final_cleaned_datasets, safe_sum_dups, integer(1)))
 
 cat("OVERALL STATISTICS:\n")
 cat("- Original total rows:", total_original_rows, "\n")
