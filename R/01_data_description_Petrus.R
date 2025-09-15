@@ -52,8 +52,21 @@ year_names <- c("year","survey_year")
 
 for (f in csv_files) {
   message("Reading: ", f)
-  df <- tryCatch(read.csv(f, stringsAsFactors = FALSE, check.names = FALSE), error = function(e) NULL)
-  if (is.null(df)) next
+  df <- tryCatch(read.csv(f, stringsAsFactors = FALSE, check.names = FALSE), error = function(e) {
+    cat("Error reading", f, ":", e$message, "\n")
+    return(NULL)
+  })
+  if (is.null(df) || nrow(df) == 0) {
+    cat("Skipping", f, "- empty or failed to read\n")
+    next
+  }
+  
+  # Check if df has column names
+  if (is.null(names(df)) || length(names(df)) == 0) {
+    cat("Skipping", f, "- no column names\n")
+    next
+  }
+  
   names(df) <- clean_names(names(df))
   ds_name <- tools::file_path_sans_ext(basename(f))
   
