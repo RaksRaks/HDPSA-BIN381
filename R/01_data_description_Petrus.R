@@ -7,14 +7,26 @@
 ## - Saves simple base-R plots (hist, boxplot, barplot) as PNGs
 
 ## -------- PROJECT PATHS (auto-detected) --------
-# Assume this script lives in project/R; project root is one level up
-project_dir <- normalizePath("..", mustWork = FALSE)
+# Discover datasets folder relative to current working directory or its parent
+cwd <- normalizePath(getwd(), mustWork = FALSE)
+parent <- normalizePath(file.path(cwd, ".."), mustWork = FALSE)
 
-# Prefer the repo's shared datasets folder; fall back to local input/
-preferred_input <- file.path(project_dir, "Project Datasets")
-input_dir  <- if (dir.exists(preferred_input)) preferred_input else file.path(project_dir, "input")
+candidates_pd <- c(
+  file.path(cwd, "Project Datasets"),
+  file.path(parent, "Project Datasets")
+)
+candidates_in <- c(
+  file.path(cwd, "input"),
+  file.path(parent, "input")
+)
 
-# Write outputs under repo outputs/person1
+existing_pd <- candidates_pd[dir.exists(candidates_pd)]
+existing_in <- candidates_in[dir.exists(candidates_in)]
+
+input_dir <- if (length(existing_pd) > 0) existing_pd[1] else if (length(existing_in) > 0) existing_in[1] else file.path(cwd, "input")
+
+# Write outputs under repo outputs/person1 next to detected root
+project_dir <- if (dirname(input_dir) == cwd) cwd else parent
 output_dir <- file.path(project_dir, "outputs", "person1")
 if (!dir.exists(output_dir)) dir.create(output_dir, recursive = TRUE)
 
@@ -37,7 +49,7 @@ sample_vals <- function(x, n = 5) {
 }
 
 csv_files <- list.files(input_dir, pattern = "\\.csv$", full.names = TRUE)
-if (length(csv_files) == 0) stop("No CSV files in input/. Save Excel as CSV or move CSVs into input/.")
+if (length(csv_files) == 0) stop(paste0("No CSV files found in ", input_dir, ". Place CSVs there or adjust input_dir."))
 
 overview_list   <- list()
 dictionary_list <- list()
