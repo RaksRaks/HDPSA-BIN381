@@ -6,36 +6,18 @@
 ## - Infers time span (year/survey_year) and basic geo coverage
 ## - Saves simple base-R plots (hist, boxplot, barplot) as PNGs
 
-## -------- PROJECT PATHS (auto-detected) --------
-# Discover datasets folder relative to current working directory or its parent
-cwd <- normalizePath(getwd(), mustWork = FALSE)
-parent <- normalizePath(file.path(cwd, ".."), mustWork = FALSE)
+## -------- PROJECT PATHS --------
+# Use Project Datasets folder directly
+input_dir <- "Project Datasets"
+output_dir <- "outputs/person1"
 
-candidates_pd <- c(
-  file.path(cwd, "Project Datasets"),
-  file.path(parent, "Project Datasets")
-)
-candidates_in <- c(
-  file.path(cwd, "input"),
-  file.path(parent, "input")
-)
-
-existing_pd <- candidates_pd[dir.exists(candidates_pd)]
-existing_in <- candidates_in[dir.exists(candidates_in)]
-
-# Debug: print what we're checking
-cat("Checking for Project Datasets in:\n")
-for (p in candidates_pd) cat("  ", p, "->", dir.exists(p), "\n")
-cat("Checking for input in:\n")
-for (p in candidates_in) cat("  ", p, "->", dir.exists(p), "\n")
-
-input_dir <- if (length(existing_pd) > 0) existing_pd[1] else if (length(existing_in) > 0) existing_in[1] else file.path(cwd, "input")
-cat("Selected input_dir:", input_dir, "\n")
-
-# Write outputs under repo outputs/person1 next to detected root
-project_dir <- if (dirname(input_dir) == cwd) cwd else parent
-output_dir <- file.path(project_dir, "outputs", "person1")
+# Create output directory if it doesn't exist
 if (!dir.exists(output_dir)) dir.create(output_dir, recursive = TRUE)
+
+# Verify input directory exists
+if (!dir.exists(input_dir)) {
+  stop("Project Datasets folder not found. Make sure you're running from the project root directory.")
+}
 
 ## Optional: try to load janitor::clean_names(); else use a tiny fallback
 clean_names <- function(x) {
