@@ -6,12 +6,16 @@
 ## - Infers time span (year/survey_year) and basic geo coverage
 ## - Saves simple base-R plots (hist, boxplot, barplot) as PNGs
 
-## -------- SET YOUR FOLDER --------
-project_dir <- "C:/Users/modir/Desktop/BIN381_M2"  # <-- CHANGE this to your folder
-## ----------------------------------
+## -------- PROJECT PATHS (auto-detected) --------
+# Assume this script lives in project/R; project root is one level up
+project_dir <- normalizePath("..", mustWork = FALSE)
 
-input_dir  <- file.path(project_dir, "input")
-output_dir <- file.path(project_dir, "output")
+# Prefer the repo's shared datasets folder; fall back to local input/
+preferred_input <- file.path(project_dir, "Project Datasets")
+input_dir  <- if (dir.exists(preferred_input)) preferred_input else file.path(project_dir, "input")
+
+# Write outputs under repo outputs/person1
+output_dir <- file.path(project_dir, "outputs", "person1")
 if (!dir.exists(output_dir)) dir.create(output_dir, recursive = TRUE)
 
 ## Optional: try to load janitor::clean_names(); else use a tiny fallback
