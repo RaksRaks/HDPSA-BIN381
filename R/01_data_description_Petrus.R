@@ -23,7 +23,14 @@ candidates_in <- c(
 existing_pd <- candidates_pd[dir.exists(candidates_pd)]
 existing_in <- candidates_in[dir.exists(candidates_in)]
 
+# Debug: print what we're checking
+cat("Checking for Project Datasets in:\n")
+for (p in candidates_pd) cat("  ", p, "->", dir.exists(p), "\n")
+cat("Checking for input in:\n")
+for (p in candidates_in) cat("  ", p, "->", dir.exists(p), "\n")
+
 input_dir <- if (length(existing_pd) > 0) existing_pd[1] else if (length(existing_in) > 0) existing_in[1] else file.path(cwd, "input")
+cat("Selected input_dir:", input_dir, "\n")
 
 # Write outputs under repo outputs/person1 next to detected root
 project_dir <- if (dirname(input_dir) == cwd) cwd else parent
