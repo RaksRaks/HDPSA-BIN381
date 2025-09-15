@@ -1,3 +1,7 @@
+# =============================================================================
+# Milestone 2 – Member 3: Data Cleaning Process
+# Team HDPSA
+# =============================================================================
 
 # Overview:
 # This script implements comprehensive data cleaning procedures for the South African 
