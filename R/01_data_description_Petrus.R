@@ -17,8 +17,8 @@ if (!dir.exists(input_dir)) {
 
 cat("Using input_dir:", input_dir, "\n")
 
-# Set output directory
-output_dir <- "outputs/person1"
+# Set output directory (inside project)
+output_dir <- "/Users/raksu/Desktop/BIN_Project/outputs/person1"
 if (!dir.exists(output_dir)) dir.create(output_dir, recursive = TRUE)
 
 ## Optional: try to load janitor::clean_names(); else use a tiny fallback
