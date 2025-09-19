@@ -1,0 +1,648 @@
+"Indicator","Value","SurveyYear"
+"Antenatal care provider: Doctor",27.3,1998
+"Antenatal care provider: Nurse/midwife",68.4,1998
+"Antenatal care provider: Traditional birth attendant",0.1,1998
+"Antenatal care provider: Other",0.7,1998
+"Antenatal care provider: Missing ",0.9,1998
+"No antenatal care",2.7,1998
+"Antenatal care: Total",100,1998
+"Antenatal care from a skilled provider",95.7,1998
+"Number of women with a live birth (or stillbirth) in the last two (or three/five) years",2010,1998
+"Number of women with a live birth (or stillbirth) in the last two (or three/five) years (unweighted)",2041,1998
+"Place of delivery: Public sector",77.6,1998
+"Place of delivery: Private sector",7.5,1998
+"Place of delivery: At home",13.5,1998
+"Place of delivery: Other",0.1,1998
+"Place of delivery: don't know or missing",1.2,1998
+"Place of delivery: Total",100,1998
+"Place of delivery: Health facility",85.2,1998
+"Number of live births (or stillbirths) in the last two (or three/five) years",2081,1998
+"Number of live births (or stillbirths) in the last two (or three/five) years (unweighted)",2113,1998
+"Assistance during delivery: Doctor",28.2,1998
+"Assistance during delivery: Nurse/midwife",58.1,1998
+"Assistance during delivery: Traditional birth attendant",1.2,1998
+"Assistance during delivery: Relative or other",9.7,1998
+"Assistance during delivery: No one",1.8,1998
+"Assistance during delivery: don't know or missing",0.9,1998
+"Assistance during delivery: Total",100,1998
+"Assistance during delivery from a skilled provider",86.4,1998
+"Delivery by cesarean section",15.1,1998
+"Number of live births (or stillbirths) in the last two (or three/five) years",2081,1998
+"Number of live births (or stillbirths) in the last two (or three/five) years (unweighted)",2113,1998
+"Children with symptoms of ARI",19.3,1998
+"Number of children born in the last five (or three) years",4740,1998
+"Number of children born in the last five (or three) years (unweighted)",4797,1998
+"Children with ARI for whom advice or treatment was sought",78.2,1998
+"Number of children with symptoms of ARI born in the last five (or three) years",913,1998
+"Number of children with symptoms of ARI born in the last five (or three) years (unweighted)",862,1998
+"Treatment of diarrhea: Advice or treatment was sought",60.6,1998
+"Treatment of diarrhea: Oral rehydration solution (ORS)",51.2,1998
+"Treatment of diarrhea: Recommended home fluids (RHF) at home",68.6,1998
+"Treatment of diarrhea: Either ORS or RHF",81,1998
+"Treatment of diarrhea: Increased fluids",57.1,1998
+"Treatment of diarrhea: ORT or increased fluids",89.1,1998
+"Treatment of diarrhea: No ORS, RHF or increased fluids",10.9,1998
+"Treatment of diarrhea: Intravenous solution",0.4,1998
+"Treatment of diarrhea: Home remedy - other",86.3,1998
+"Treatment of diarrhea: No treatment",0.5,1998
+"Treatment of diarrhea: don't know or missing",1.7,1998
+"Number of children born in the last five (or three) years",627,1998
+"Number of children born in the last five (or three) years (unweighted)",634,1998
+"Antenatal care provider: Doctor",16.1,2016
+"Antenatal care provider: Nurse/midwife",77,2016
+"Antenatal care provider: Other",0.5,2016
+"No antenatal care",6.5,2016
+"Antenatal care: Total",100,2016
+"Antenatal care from a skilled provider",93.1,2016
+"Number of women with a live birth (or stillbirth) in the last two (or three/five) years",1386,2016
+"Number of women with a live birth (or stillbirth) in the last two (or three/five) years (unweighted)",1376,2016
+"Place of delivery: Public sector",88.4,2016
+"Place of delivery: Private sector",7.7,2016
+"Place of delivery: At home",3.4,2016
+"Place of delivery: Other",0.5,2016
+"Place of delivery: Total",100,2016
+"Place of delivery: Health facility",96.1,2016
+"Number of live births (or stillbirths) in the last two (or three/five) years",1414,2016
+"Number of live births (or stillbirths) in the last two (or three/five) years (unweighted)",1406,2016
+"Assistance during delivery: Doctor",29.5,2016
+"Assistance during delivery: Nurse/midwife",67.6,2016
+"Assistance during delivery: Traditional birth attendant",0.2,2016
+"Assistance during delivery: Relative or other",1.8,2016
+"Assistance during delivery: No one",0.9,2016
+"Assistance during delivery: Total",100,2016
+"Assistance during delivery from a skilled provider",97.1,2016
+"Delivery by cesarean section",25.3,2016
+"Number of live births (or stillbirths) in the last two (or three/five) years",1414,2016
+"Number of live births (or stillbirths) in the last two (or three/five) years (unweighted)",1406,2016
+"Provider of mothers' first postnatal checkup: Doctor/nurse/midwife",83.2,2016
+"Provider of mothers' first postnatal checkup: Community health worker",0.2,2016
+"Provider of mothers' first postnatal checkup: Traditional birth attendant",0.2,2016
+"No postnatal checkup for mother within first two days of birth",16.4,2016
+"Provider of mothers' first postnatal checkup: Total",100,2016
+"Number of mothers",1386,2016
+"Number of mothers (unweighted)",1376,2016
+"Provider of newborns' first postnatal checkup: Doctor/nurse/midwife",86.2,2016
+"Provider of newborns' first postnatal checkup: Community health worker",0,2016
+"No postnatal checkup for newborn within first two days of birth",13.8,2016
+"Provider of newborns' first postnatal checkup: Total",100,2016
+"Number of newborns",1386,2016
+"Number of newborns (unweighted)",1376,2016
+"Children with symptoms of ARI",3.1,2016
+"Number of children born in the last five (or three) years",3444,2016
+"Number of children born in the last five (or three) years (unweighted)",3413,2016
+"Children with ARI for whom advice or treatment was sought",87.6,2016
+"Children with symptoms of ARI who received antibiotics",42,2016
+"Number of children with symptoms of ARI born in the last five (or three) years",107,2016
+"Number of children with symptoms of ARI born in the last five (or three) years (unweighted)",94,2016
+"Children with fever for whom advice or treatment was sought",68.4,2016
+"Child took antimalarial drugs for fever",0.5,2016
+"Child took antibiotic drugs for fever",30.3,2016
+"Number of children with fever in the last two weeks",679,2016
+"Number of children with fever in the last two weeks (unweighted)",647,2016
+"Treatment of diarrhea: Advice or treatment was sought",63,2016
+"Treatment of diarrhea: Oral rehydration solution (ORS)",51.4,2016
+"Treatment of diarrhea: Recommended home fluids (RHF) at home",72.5,2016
+"Treatment of diarrhea: Either ORS or RHF",80.5,2016
+"Treatment of diarrhea: Zinc supplements",36.8,2016
+"Treatment of diarrhea: Increased fluids",15,2016
+"Treatment of diarrhea: ORT or increased fluids",83.3,2016
+"Treatment of diarrhea: No ORS, RHF or increased fluids",16.7,2016
+"Treatment of diarrhea: Antibiotics",10.6,2016
+"Treatment of diarrhea: Antimotility drugs",1.8,2016
+"Treatment of diarrhea: Intravenous solution",0.6,2016
+"Treatment of diarrhea: Injection",1.1,2016
+"Treatment of diarrhea: Home remedy - other",10.3,2016
+"Treatment of diarrhea: No treatment",12.1,2016
+"Number of children born in the last five (or three) years",356,2016
+"Number of children born in the last five (or three) years (unweighted)",350,2016
+"Children severely stunted",9.8,2016
+"Children stunted",27.4,2016
+"Mean height for age of children",-1.1,2016
+"Children severely wasted",0.6,2016
+"Children wasted",2.5,2016
+"Children overweight",13.3,2016
+"Mean weight for height of children",0.6,2016
+"Children severely underweight",1.1,2016
+"Children underweight",5.9,2016
+"Children overweight for their age",4.5,2016
+"Mean weight for age of children",-0.2,2016
+"Women with height below 145 cm",1.5,2016
+"Number of women",3272,2016
+"Number of women (unweighted)",3405,2016
+"Mean Body Mass Index (BMI) for women",28.3,2016
+"Women with normal BMI (18.5-24.9)",34.7,2016
+"Women who are thin according to BMI (<18.5)",3.1,2016
+"Women who are mildly thin according to BMI (17.0-18.4)",2.6,2016
+"Women who are moderately thin according to BMI (<17.0)",0.5,2016
+"Women who are overweight or obese according to BMI (>=25.0)",62.2,2016
+"Women who are overweight according to BMI (25.0-29.9)",26.3,2016
+"Women who are obese according to BMI (>=30.0)",35.9,2016
+"Number of women",3081,2016
+"Number of women (unweighted)",3210,2016
+"Men with height below 145 cm",0.3,2016
+"Number of men",3202,2016
+"Number of men (unweighted)",3179,2016
+"Mean Body Mass Index (BMI) for men",23,2016
+"Men with normal BMI (18.5-24.9)",65.2,2016
+"Men who are thin according to BMI (<18.5)",9.6,2016
+"Men who are mildly thin according to BMI (17.0-18.4)",7.4,2016
+"Men who are moderately thin according to BMI (<17.0)",2.2,2016
+"Men who are overweight or obese according to BMI (>=25.0)",25.1,2016
+"Men who are overweight according to BMI (25.0-29.9)",17.2,2016
+"Men who are obese according to BMI (>=30.0)",7.9,2016
+"Number of men",2336,2016
+"Number of men (unweighted)",2457,2016
+"Neonatal mortality rate (5 year periods)",20,1998
+"Postneonatal mortality (5 year periods)",26,1998
+"Infant mortality rate (5 year periods)",45,1998
+"Child mortality (5 year periods)",15,1998
+"Under-five mortality rate (5 year periods)",59,1998
+"Neonatal mortality rate",20,1998
+"Postneonatal mortality rate",26,1998
+"Infant mortality rate",45,1998
+"Child mortality rate",15,1998
+"Under-five mortality rate",59,1998
+"Stillbirths",127,1998
+"Early neonatal deaths",66,1998
+"Perinatal mortality rate (5 years)",38,1998
+"Number of pregnancies of 7+ months duration",5119,1998
+"Number of pregnancies of 7+ months duration (unweighted)",5183,1998
+"Neonatal mortality rate (5 year periods)",21,2016
+"Postneonatal mortality (5 year periods)",14,2016
+"Infant mortality rate (5 year periods)",35,2016
+"Child mortality (5 year periods)",7,2016
+"Under-five mortality rate (5 year periods)",42,2016
+"Neonatal mortality rate",21,2016
+"Postneonatal mortality rate",14,2016
+"Infant mortality rate",35,2016
+"Child mortality rate",7,2016
+"Under-five mortality rate",42,2016
+"Stillbirths",37,2016
+"Early neonatal deaths",66,2016
+"Perinatal mortality rate (5 years)",29,2016
+"Number of pregnancies of 7+ months duration",3577,2016
+"Number of pregnancies of 7+ months duration (unweighted)",3563,2016
+"Population using an improved water source",83.5,1998
+"Population using water piped into dwelling",36,1998
+"Population using water piped into yard/plot",23.1,1998
+"Population using a public tap/standpipe",19.3,1998
+"Population with improved water source on the premises",60.3,1998
+"Population with basic water service",80.2,1998
+"Population with limited water service",3.3,1998
+"Population with water more than 30 minutes away round trip",8.4,1998
+"Population with an improved sanitation facility",46.4,1998
+"Population with an unimproved sanitation facility",40.8,1998
+"Population using open defecation",12.8,1998
+"Households with one room for sleeping",29.4,1998
+"Mean number of persons per sleeping room",1.9,1998
+"Mean number of household members",4.2,1998
+"Population using an improved water source",93.4,2016
+"Population using water piped into dwelling",45.5,2016
+"Population using water piped into yard/plot",24,2016
+"Population using a public tap/standpipe",13.6,2016
+"Population with improved water source on the premises",76.5,2016
+"Population with basic water service",90.1,2016
+"Population with limited water service",3.2,2016
+"Population with water more than 30 minutes away round trip",5.8,2016
+"Population with water not available for at least one day",33,2016
+"Population with an improved sanitation facility",96,2016
+"Population with an unimproved sanitation facility",1.7,2016
+"Population using open defecation",2.2,2016
+"Population with basic sanitation service",81.1,2016
+"Population with limited sanitation service",15,2016
+"Population with a place for handwashing was observed",86.1,2016
+"Population with a basic handwashing facility, with soap and water available",46,2016
+"Population with a limited handwashing facility, lacking soap and/or water",46.5,2016
+"Households with one room for sleeping",35.1,2016
+"Mean number of persons per sleeping room",1.5,2016
+"Mean number of household members",3.4,2016
+"Total fertility rate 15-49",2.9,1998
+"Married women currently using any method of contraception",56.3,1998
+"Married women currently using any modern method of contraception",55.1,1998
+"Unmet need for family planning",16.5,1998
+"Demand for family planning satisfied by modern methods",75.7,1998
+"Median age at first marriage [Women]: 25-49",24.2,1998
+"Median age at first sexual intercourse [Women]: 25-49",18.4,1998
+"Pregnancy-related mortality ratio",150,1998
+"Fully vaccinated (8 basic antigens)",63.4,1998
+"Median duration of exclusive breastfeeding",0.4,1998
+"Women with secondary or higher education",68.3,1998
+"Households with electricity",64.9,1998
+"Total fertility rate 15-49",2.6,2016
+"Married women currently using any method of contraception",54.6,2016
+"Married women currently using any modern method of contraception",54,2016
+"Unmet need for family planning",14.9,2016
+"Demand for family planning satisfied by modern methods",77.8,2016
+"Median age at first sexual intercourse [Women]: 25-49",18.1,2016
+"Pregnancy-related mortality ratio",536,2016
+"Maternal mortality ratio",475,2016
+"Fully vaccinated (8 basic antigens)",61.2,2016
+"Children stunted",27.4,2016
+"Children wasted",2.5,2016
+"Children underweight",5.9,2016
+"Median duration of exclusive breastfeeding",0.8,2016
+"Women receiving an HIV test and receiving test results in the last 12 months",58.5,2016
+"Men receiving an HIV test and receiving test results in the last 12 months",44.6,2016
+"HIV prevalence among women",27.3,2016
+"HIV prevalence among men",14.4,2016
+"HIV prevalence among general population",21.2,2016
+"Women with secondary or higher education",88.9,2016
+"Women who are literate",96.3,2016
+"Households with electricity",90,2016
+"Sex before the age of 15 [Women]",8,1998
+"Number of young women",4324,1998
+"Number of young women (unweighted)",4459,1998
+"Sex before the age of 18 [Women]",54.5,1998
+"Number of young women age 18-24",2955,1998
+"Number of young women age 18-24 (unweighted)",2993,1998
+"Young women never having sexual intercourse",40.3,1998
+"Young women having premarital sex in last year",48.7,1998
+"Number of never-married young women",3721,1998
+"Number of never-married young women (unweighted)",3857,1998
+"Young women using a condom during premarital sex",21.8,1998
+"Number of never-married young women who had sex in the past year",1811,1998
+"Number of never-married young women who had sex in the past year (unweighted)",1858,1998
+"Number of young women",4324,1998
+"Number of young women (unweighted)",4459,1998
+"Number of sexually active young women",2343,1998
+"Number of sexually active young women (unweighted)",2390,1998
+"Higher risk sex in the last year [Women]",57.6,2016
+"Number of women reporting sexual activity in the last 12 months",6586,2016
+"Number of women reporting sexual activity in the last 12 months (unweighted)",6489,2016
+"Condom use at last higher risk sex (with a non-marital, non-cohabiting partner) [Women]",60,2016
+"Number of women who had sex with a non-marital, non-cohabiting partner in the last 12 months",3793,2016
+"Number of women who had sex with a non-marital, non-cohabiting partner in the last 12 months (unweighted)",3866,2016
+"Higher risk sex in the last year [Men]",68.7,2016
+"Number of men reporting sexual activity in the last 12 months",2603,2016
+"Number of men reporting sexual activity in the last 12 months (unweighted)",2532,2016
+"Condom use at last higher risk sex (with a non-marital, non-cohabiting partner) [Men]",68.4,2016
+"Number of men who had sex with a non-marital, non-cohabiting partner in the last 12 months",1787,2016
+"Number of men who had sex with a non-marital, non-cohabiting partner in the last 12 months (unweighted)",1799,2016
+"Higher-risk Sex (with multiple partners among all respondents) [Women]",4.5,2016
+"Number of women",8514,2016
+"Number of women (unweighted)",8514,2016
+"Condom use during higher-risk sex (with multiple partners) [Women]",57.6,2016
+"Number of women",387,2016
+"Number of women (unweighted)",394,2016
+"Mean number of sexual partners in lifetime [Women]",3.9,2016
+"Number of women who ever had sexual intercourse",7205,2016
+"Number of women who ever had sexual intercourse (unweighted)",7182,2016
+"Higher-risk Sex (with multiple partners among all respondents) [Men]",17,2016
+"Number of men",3202,2016
+"Number of men (unweighted)",3179,2016
+"Condom use during higher-risk sex (with multiple partners) [Men]",65.3,2016
+"Number of men",544,2016
+"Number of men (unweighted)",535,2016
+"Mean number of sexual partners in lifetime [Men]",14.7,2016
+"Number of men who ever had sexual intercourse",2488,2016
+"Number of men who ever had sexual intercourse (unweighted)",2467,2016
+"Point prevalence of concurrent sexual partners [Women]",1.5,2016
+"Cumulative prevalence of concurrent sexual partners [Women]",3.1,2016
+"Number of women",8514,2016
+"Number of women (unweighted)",8514,2016
+"Had concurrent sexual partners [Women]",68.1,2016
+"Number of women with multiple partners in the 12 months preceding the survey",387,2016
+"Number of women with multiple partners in the 12 months preceding the survey (unweighted)",394,2016
+"Point prevalence of concurrent sexual partners [Men]",4.7,2016
+"Cumulative prevalence of concurrent sexual partners [Men]",12.1,2016
+"Number of men",3202,2016
+"Number of men (unweighted)",3179,2016
+"Had concurrent sexual partners [Men]",71,2016
+"Number of men with multiple partners in the 12 months preceding the survey",544,2016
+"Number of men with multiple partners in the 12 months preceding the survey (unweighted)",535,2016
+"Ever paid for sexual intercourse",4.7,2016
+"Paid for sexual intercourse in the past 12 months",2.9,2016
+"Number of men",3202,2016
+"Number of men (unweighted)",3179,2016
+"Condom use at last paid sexual intercourse",83.1,2016
+"Number of men who paid for sex in the last 12 months",92,2016
+"Number of men who paid for sex in the last 12 months (unweighted)",86,2016
+"Sex before the age of 15 [Women]",6.1,2016
+"Number of young women",2842,2016
+"Number of young women (unweighted)",2913,2016
+"Sex before the age of 18 [Women]",50.3,2016
+"Number of young women age 18-24",1984,2016
+"Number of young women age 18-24 (unweighted)",1995,2016
+"Sex before the age of 15 [Men]",14.6,2016
+"Number of young men",1235,2016
+"Number of young men (unweighted)",1307,2016
+"Sex before the age of 18 [Men]",66.2,2016
+"Number of young men age 18-24",848,2016
+"Number of young men age 18-24 (unweighted)",888,2016
+"Young women never having sexual intercourse",37.4,2016
+"Young women having premarital sex in last year",57.1,2016
+"Number of never-married young women",2508,2016
+"Number of never-married young women (unweighted)",2621,2016
+"Young women using a condom during premarital sex",62.7,2016
+"Number of never-married young women who had sex in the past year",1431,2016
+"Number of never-married young women who had sex in the past year (unweighted)",1471,2016
+"Young men never having sexual intercourse",30.7,2016
+"Young men having premarital sex in last year",62.5,2016
+"Number of never-married men",1191,2016
+"Number of never-married men (unweighted)",1268,2016
+"Young men using a condom during premarital sex",75.9,2016
+"Number of men",744,2016
+"Number of men (unweighted)",783,2016
+"Young women having multiple partners in last year",4.6,2016
+"Number of young women",2842,2016
+"Number of young women (unweighted)",2913,2016
+"Sexually active young women having multiple partners in last year",7.5,2016
+"Number of sexually active young women",1757,2016
+"Number of sexually active young women (unweighted)",1754,2016
+"Young women using a condom at last sexual intercourse",61.4,2016
+"Number of young women",132,2016
+"Number of young women (unweighted)",153,2016
+"Young men having multiple partners in last year",20.7,2016
+"Number of young men",1235,2016
+"Number of young men (unweighted)",1307,2016
+"Sexually active young men having multiple partners in last year",32.4,2016
+"Number of sexually active young men",788,2016
+"Number of sexually active young men (unweighted)",820,2016
+"Young men using a condom at last sexual intercourse",72.9,2016
+"Number of young men",256,2016
+"Number of young men (unweighted)",244,2016
+"Age-mixing in sexual partnerships (young women age 15-19, any partner in the last 12 months)",5.9,2016
+"Number of young women",575,2016
+"Number of young women (unweighted)",1153,2016
+"Age-mixing in sexual partnerships (young men age 15-24, any partner in the last 12 months)",0.1,2016
+"Number of young men",287,2016
+"Number of young men (unweighted)",308,2016
+"BCG vaccination received",96.8,1998
+"DPT 1 vaccination received",93.3,1998
+"DPT 2 vaccination received",86.2,1998
+"DPT 3 vaccination received",76.4,1998
+"Polio 0 vaccination received",91.2,1998
+"Polio 1 vaccination received",91,1998
+"Polio 2 vaccination received",82.7,1998
+"Polio 3 vaccination received",72.1,1998
+"Measles vaccination received",82.2,1998
+"Fully vaccinated (8 basic antigens)",63.4,1998
+"Received no vaccinations",2.2,1998
+"Number of children 12-23 months",973,1998
+"Number of children 12-23 months (unweighted)",971,1998
+"BCG vaccination received",96.8,1998
+"DPT 1 vaccination received",93.3,1998
+"DPT 2 vaccination received",86.2,1998
+"DPT 3 vaccination received",76.4,1998
+"Polio 0 vaccination received",91.2,1998
+"Polio 1 vaccination received",91,1998
+"Polio 2 vaccination received",82.7,1998
+"Polio 3 vaccination received",72.1,1998
+"Measles vaccination received",82.2,1998
+"Received no vaccinations",2.2,1998
+"Number of children 12-23 months",973,1998
+"Number of children 12-23 months (unweighted)",971,1998
+"BCG vaccination received in first year",94.1,1998
+"DPT 1 vaccination received in first year",91.1,1998
+"DPT 2 vaccination received in first year",80.4,1998
+"DPT 3 vaccination received in first year",70.5,1998
+"Polio 0 vaccination received in first year",84.7,1998
+"Polio 1 vaccination received in first year",87.3,1998
+"Polio 2 vaccination received in first year",78,1998
+"Polio 3 vaccination received in first year",62.7,1998
+"Measles vaccination received in first year",40.2,1998
+"Fully vaccinated (8 basic antigens)",40.9625,1998
+"Received no vaccinations in first year",15.2,1998
+"Percentage showing a vaccination card",61.8,1998
+"Number of children one to four years of age",3734,1998
+"Number of children one to four years of age (unweighted)",3761,1998
+"BCG vaccination received",92.5,2016
+"DPT 1 vaccination received",91.2,2016
+"DPT 2 vaccination received",75.3,2016
+"DPT 3 vaccination received",64.9,2016
+"Polio 0 vaccination received",92.3,2016
+"Polio 1 vaccination received",78.1,2016
+"Measles vaccination received",86.1,2016
+"Hepatitis 1 vaccination received",90.2,2016
+"Hepatitis 2 vaccination received",73.4,2016
+"Hepatitis 3 vaccination received",65,2016
+"Haemophilus influenza type b 1 vaccination received",91.2,2016
+"Haemophilus influenza type b 2 vaccination received",75.3,2016
+"Haemophilus influenza type b 3 vaccination received",64.9,2016
+"Fully vaccinated (8 basic antigens)",61.2,2016
+"Received no vaccinations",5.3,2016
+"Number of children 12-23 months",677,2016
+"Number of children 12-23 months (unweighted)",670,2016
+"BCG vaccination received",92.5,2016
+"DPT 1 vaccination received",91.2,2016
+"DPT 2 vaccination received",75.3,2016
+"DPT 3 vaccination received",64.9,2016
+"Polio 0 vaccination received",92.3,2016
+"Polio 1 vaccination received",78.1,2016
+"Measles vaccination received",86.1,2016
+"Hepatitis 1 vaccination received",90.2,2016
+"Hepatitis 2 vaccination received",73.4,2016
+"Hepatitis 3 vaccination received",65,2016
+"Haemophilus influenza type b 1 vaccination received",91.2,2016
+"Haemophilus influenza type b 2 vaccination received",75.3,2016
+"Haemophilus influenza type b 3 vaccination received",64.9,2016
+"Received no vaccinations",5.3,2016
+"Number of children 12-23 months",677,2016
+"Number of children 12-23 months (unweighted)",670,2016
+"BCG vaccination received in first year",91.4,2016
+"DPT 1 vaccination received in first year",88.5,2016
+"DPT 2 vaccination received in first year",72.7,2016
+"DPT 3 vaccination received in first year",63.3,2016
+"Polio 0 vaccination received in first year",89.9,2016
+"Polio 1 vaccination received in first year",75.9,2016
+"Measles vaccination received in first year",79.7,2016
+"Fully vaccinated (8 basic antigens)",58.2,2016
+"Received no vaccinations in first year",8.9,2016
+"Percentage showing a vaccination card",63.7,2016
+"Number of children one to four years of age",1337,2016
+"Number of children one to four years of age (unweighted)",1346,2016
+"Children ever breastfed",87.4,1998
+"Children who started breastfeeding within 1 hour of birth",38.9,1998
+"Children exclusively breastfed",6.9,1998
+"Children breastfeeding and consuming plain water only",6.3,1998
+"Children breastfeeding and consuming complementary foods",40.9,1998
+"Children currently breastfeeding",83.4,1998
+"Children using a bottle with a nipple",59.4,1998
+"Median duration of any breastfeeding",16,1998
+"Children ever breastfed",84,2016
+"Children who started breastfeeding within 1 hour of birth",67.3,2016
+"Children exclusively breastfed",31.6,2016
+"Children breastfeeding and consuming plain water only",13.6,2016
+"Children breastfeeding and consuming complementary foods",17.6,2016
+"Children currently breastfeeding",74.8,2016
+"Children using a bottle with a nipple",44.7,2016
+"Median duration of any breastfeeding",10.7,2016
+"Breastfed children 6-23 months fed both 4+ food groups and the minimum meal frequency",11.2,2016
+"Non-breastfed children 6-23 months fed milk or milk products",68.4,2016
+"Non-breastfed children 6-23 months with 3 IYCF practices",30.6,2016
+"Children 6-23 months fed 5+ food groups",39.9,2016
+"Children 6-23 months fed the minimum meal frequency",50.2,2016
+"Children 6-23 months with 3 IYCF practices",22.5,2016
+"Women with secondary or higher education",11.8,2016
+"Women who can read a whole sentence",76.2,2016
+"Women who can read part of a sentence",8.2,2016
+"Women who cannot read at all",3.5,2016
+"Women for whom no card with required language was available",0.1,2016
+"Women who are blind/visually impaired",0.1,2016
+"Women's literacy: Total",100,2016
+"Women who are literate",96.3,2016
+"Number of women",8514,2016
+"Number of women (unweighted)",11805,2016
+"Men with secondary or higher education",10.8,2016
+"Men who can read a whole sentence",71.4,2016
+"Men who can read part of a sentence",12.8,2016
+"Men who cannot read at all",4.9,2016
+"Men for whom no card with required language was available",0.1,2016
+"Men who are blind/visually impaired",0,2016
+"Men's literacy: Total",100,2016
+"Men who are literate",94.9,2016
+"Number of men",3202,2016
+"Number of men (unweighted)",3179,2016
+"Female deaths that are pregnancy-related",5.5,1998
+"Number of pregnancy-related deaths",19,1998
+"Years of exposure to the risk of mortality for women",122701,1998
+"Years of exposure to the risk of mortality for women (unweighted)",123738,1998
+"Pregnancy-related mortality rate",0.15,1998
+"General fertility rate",97,1998
+"Pregnancy-related mortality ratio",150,1998
+"Pregnancy-related mortality ratio CI lower bound (PRMR-2SE)",77,1998
+"Pregnancy-related mortality ratio CI upper bound (PRMR+2SE)",223,1998
+"Lifetime risk of pregnancy-related death",0.005,1998
+"Female deaths that are pregnancy-related",7.8,2016
+"Number of pregnancy-related deaths",31,2016
+"Years of exposure to the risk of mortality for women",62768,2016
+"Years of exposure to the risk of mortality for women (unweighted)",63523,2016
+"Pregnancy-related mortality rate",0.47,2016
+"General fertility rate",88,2016
+"Pregnancy-related mortality ratio",536,2016
+"Pregnancy-related mortality ratio CI lower bound (PRMR-2SE)",270,2016
+"Pregnancy-related mortality ratio CI upper bound (PRMR+2SE)",802,2016
+"Lifetime risk of pregnancy-related death",0.015,2016
+"Maternal mortality ratio",475,2016
+"Households with an improved sanitation facility",50.1,1998
+"Households with an unimproved sanitation facility",38.3,1998
+"Households with a pit latrine without a slab or an open pit",31.2,1998
+"Households with a bucket toilet",6,1998
+"Households using open defecation",11.6,1998
+"Households with don't know or missing information on toilet facility",0.7,1998
+"Households total",100,1998
+"Number of households",12247,1998
+"Number of households (unweighted)",12247,1998
+"Population with a pit latrine without a slab or an open pit",34.1,1998
+"Population with a bucket toilet",5.7,1998
+"Population with don't know or missing information on toilet facility",0.7,1998
+"Population total",100,1998
+"Number of persons",52007,1998
+"Number of persons (unweighted)",52465,1998
+"Households with an improved sanitation facility",95.6,2016
+"Households with a flush or pour flush toilet to a piped sewer system",56.8,2016
+"Households with a flush or pour flush toilet to a septic tank",1.7,2016
+"Households with a flush or pour flush toilet to a pit latrine",1.3,2016
+"Households with a ventilated improved pit latrine (VIP)",26,2016
+"Households with a pit latrine with a slab",8,2016
+"Households with a composting toilet",1.1,2016
+"Households with an unimproved sanitation facility",2,2016
+"Households with a flush or pour flush toilet not to a sewer, septic tank or pit latrine",0.4,2016
+"Households with a bucket toilet",1.6,2016
+"Households using open defecation",2.4,2016
+"Households total",100,2016
+"Number of households",11083,2016
+"Number of households (unweighted)",11083,2016
+"Population with a flush or pour flush toilet to a piped sewer system",54.3,2016
+"Population with a flush or pour flush toilet to a septic tank",1.4,2016
+"Population with a flush or pour flush toilet to a pit latrine",0.9,2016
+"Population with a ventilated improved pit latrine (VIP)",28.1,2016
+"Population with a pit latrine with a slab",9.9,2016
+"Population with a composting toilet",1,2016
+"Population with a flush or pour flush toilet not to a sewer, septic tank or pit latrine",0.4,2016
+"Population with a bucket toilet",1.4,2016
+"Population total",100,2016
+"Number of persons",37205,2016
+"Number of persons (unweighted)",37925,2016
+"Households using an improved water source",86.3,1998
+"Households using water piped into dwelling",38.9,1998
+"Households using a public tap/standpipe",19.5,1998
+"Households using a tubewell/borehole",3,1998
+"Households using rainwater",0.7,1998
+"Households using tanker truck",1,1998
+"Households using bottled water",0.1,1998
+"Households using an unimproved water source",13.2,1998
+"Households using surface water",11.8,1998
+"Households using other water source",1.4,1998
+"Households with don't know or missing information on water source",0.5,1998
+"Households: Total",100,1998
+"Population using a tubewell/borehole",3.4,1998
+"Population using rainwater",0.7,1998
+"Population using tanker truck",0.9,1998
+"Population using bottled water/demi john",0.1,1998
+"Population using an unimproved water source",15.9,1998
+"Population using surface water",14.4,1998
+"Population using other water source",1.5,1998
+"Population with don't know or missing information on water source",0.7,1998
+"Population: Total",100,1998
+"Households with water on the premises",63.2,1998
+"Households with water 30 minutes or less away round trip",28.5,1998
+"Households with water more than 30 minutes away round trip",6.7,1998
+"Household with unknown or missing information on round trip time to water",1.6,1998
+"Households: Total",100,1998
+"Population with water on the premises",60.4,1998
+"Population with water 30 minutes or less away round trip",29.5,1998
+"Population with unknown or missing information on round trip time to water",1.7,1998
+"Population: Total",100,1998
+"Number of households",12247,1998
+"Number of households (unweighted)",12247,1998
+"Number of persons",52007,1998
+"Number of persons (unweighted)",52465,1998
+"Households using an improved water source",95.3,2016
+"Households using water piped into dwelling",45.1,2016
+"Households using a public tap/standpipe",14.1,2016
+"Households using a tubewell/borehole",2.8,2016
+"Households using a protected well",0.2,2016
+"Households using a protected spring",0.3,2016
+"Households using rainwater",0.5,2016
+"Households using tanker truck",2.1,2016
+"Households using bottled water",0.9,2016
+"Households using an unimproved water source",4.7,2016
+"Households using an unprotected well water",1.3,2016
+"Households using an unprotected spring",0.9,2016
+"Households using surface water",2.3,2016
+"Households using other water source",0.3,2016
+"Households: Total",100,2016
+"Population using a tubewell/borehole",2.8,2016
+"Population using a protected well",0.2,2016
+"Population using a protected spring",0.4,2016
+"Population using rainwater",0.5,2016
+"Population using tanker truck",2,2016
+"Population using bottled water/demi john",0.7,2016
+"Population using an unimproved water source",6.6,2016
+"Population using an unprotected well water",1.8,2016
+"Population using an unprotected spring",1.2,2016
+"Population using surface water",3.4,2016
+"Population using other water source",0.2,2016
+"Population: Total",100,2016
+"Households with water on the premises",78.5,2016
+"Households with water 30 minutes or less away round trip",16.4,2016
+"Households with water more than 30 minutes away round trip",4.5,2016
+"Household with unknown or missing information on round trip time to water",0.6,2016
+"Households: Total",100,2016
+"Population with water on the premises",76.7,2016
+"Population with water 30 minutes or less away round trip",16.9,2016
+"Population with unknown or missing information on round trip time to water",0.6,2016
+"Population: Total",100,2016
+"Households treating water by boiling",4.8,2016
+"Households treating water by adding bleach/chlorine",1.2,2016
+"Households treating water by straining through a cloth",0.1,2016
+"Households treating water using a ceramic, sand or other filter",1.4,2016
+"Households treating water using solar disinfection",0,2016
+"Households treating water using other methods",0.7,2016
+"Households not treating water",91.9,2016
+"Households with missing information on treatment of water",0,2016
+"Households using an appropriate treatment method",7.3,2016
+"Number of households",11083,2016
+"Number of households (unweighted)",11083,2016
+"Population treating water by boiling",4.6,2016
+"Population treating water by adding bleach/chlorine",1.3,2016
+"Population treating water by straining through a cloth",0,2016
+"Population treating water using a ceramic, sand or other filter",1.2,2016
+"Population treating water using solar disinfection",0,2016
+"Population treating water using other methods",0.8,2016
+"Population not treating water",92.2,2016
+"Population with missing information on treatment of water",0,2016
+"Population using an appropriate treatment method",6.9,2016
+"Number of persons",37205,2016
+"Number of persons (unweighted)",37925,2016
