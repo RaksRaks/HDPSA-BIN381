@@ -54,3 +54,7 @@ The following R scripts have been developed and executed to transform raw, dispa
 
 ## Further Documentation
 For a more detailed explanation of the R scripts, their functionalities, and the rationale behind data preparation decisions, please refer to `Milestone 2 Docs/R_Scripts_Documentation.md`.
+
+## R Environment
+
+*   **Rscript Path:** `C:\Program Files\R\R-4.5.1\bin`
