@@ -1,4 +1,4 @@
-## 01_person1_data_description_BASE.R  (no tidyverse)
+## 01_data_description_BASE.R  (no tidyverse)
 ## -------------------------------------------------
 ## What it does:
 ## - Reads ALL CSV files in input/
@@ -18,7 +18,7 @@ if (!dir.exists(input_dir)) {
 cat("Using input_dir:", input_dir, "\n")
 
 # Set output directory (inside project)
-output_dir <- "/Users/raksu/Desktop/BIN_Project/outputs/person1"
+output_dir <- "/Users/raksu/Desktop/BIN_Project/outputs/data_description"
 if (!dir.exists(output_dir)) dir.create(output_dir, recursive = TRUE)
 
 ## Optional: try to load janitor::clean_names(); else use a tiny fallback

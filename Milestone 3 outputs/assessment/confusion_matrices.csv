@@ -1,0 +1,5 @@
+model,tp,tn,fp,fn
+decision_tree,26,18,26,18
+logistic,43,3,41,1
+naive_bayes,44,0,44,0
+random_forest,27,21,23,17
