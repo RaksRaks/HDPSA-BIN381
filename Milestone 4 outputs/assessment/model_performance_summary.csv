@@ -1,0 +1,5 @@
+"Model","Accuracy","Precision","Recall","F1_Score","ROC_AUC","Meets_Accuracy_Goal","Meets_AUC_Goal"
+"Logistic Regression",0.5227,0.5119,0.9773,0.6719,0.532,"No","No"
+"Decision Tree",0.5,0.5,0.5909,0.5417,0.531,"No","No"
+"Random Forest",0.5455,0.54,0.6136,0.5745,0.5077,"No","No"
+"Naïve Bayes",0.5,0.5,1,0.6667,0.4654,"No","No"
