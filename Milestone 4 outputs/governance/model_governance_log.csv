@@ -1,0 +1,3 @@
+"Model","Version","Parameters","Last_Trained","Accuracy","Decision"
+"Logistic Regression","v2025-10-LogReg","link = logit",2025-10-10,0.5227,"Go"
+"Decision Tree","v2025-10-Tree","minsplit = 20, cp = 0.01",2025-10-10,0.5,"Go"
