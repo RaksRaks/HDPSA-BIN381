@@ -1,0 +1,5 @@
+library(skimr)
+#install.packages("skimr")
+setwd("C:/Users/modir/Downloads/HDPSA-BIN381-main (3)/HDPSA-BIN381-main")
+df <- read.csv("Cleaned Datasets/cleaned_combined_dataset.csv")
+skim(df)
