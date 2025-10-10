@@ -1,0 +1,7 @@
+"Bias_Type","Description","Impact","Mitigation"
+"Temporal Bias","Only 2 survey years (1998, 2016) - limited temporal coverage","High - Cannot detect trends or patterns over time","Include more survey years if available"
+"Geographic Bias","National-level data only - no regional variation analysis","Medium - Misses regional health disparities","Analyze provincial/regional data if available"
+"Indicator Selection Bias","Limited to 12 health indicators - may miss important factors","High - May exclude critical health determinants","Expand indicator selection based on literature"
+"Sample Size Bias","Small sample size (294 records) - limited statistical power","High - Results may not be statistically significant","Collect additional data or use synthetic data"
+"Measurement Bias","Different survey methodologies between years","Medium - Affects comparability between years","Standardize measurement approaches"
+"Representation Bias","May not represent all population segments equally","Medium - May not capture all demographic groups","Ensure representative sampling across demographics"
