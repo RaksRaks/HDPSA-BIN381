@@ -1,0 +1,11 @@
+Step,Task,Status
+1,Run deployment_export.R script,[ ] Pending
+2,Verify model_metrics_export.csv,[ ] Pending
+3,Verify feature_importance_export.csv,[ ] Pending
+4,Check Excel workbook (powerbi_data.xlsx),[ ] Pending
+5,Review deployment_summary.txt,[ ] Pending
+6,Share outputs with Person 2 (Power BI),[ ] Pending
+7,Share outputs with Person 4 (R Shiny),[ ] Pending
+8,Test Power BI data import,[ ] Pending
+9,Commit to GitHub with documentation,[ ] Pending
+10,Prepare screenshots for Milestone 5 Word report,[ ] Pending

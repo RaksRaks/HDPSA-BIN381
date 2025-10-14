@@ -1,0 +1,31 @@
+=====================================
+HDPSA DEPLOYMENT EXPORT SUMMARY
+=====================================
+Export Date: 2025-10-13
+Milestone: 5 – Deployment Phase
+Group: Group M (BIN381)
+
+Models Exported: 4
+ - Logistic Regression: Accuracy = 0.5227, AUC = 0.532
+ - Decision Tree: Accuracy = 0.5, AUC = 0.531
+ - Random Forest: Accuracy = 0.5455, AUC = 0.5077
+ - Naïve Bayes: Accuracy = 0.5, AUC = 0.4654
+
+Top Predictors:
+ 1. IndicatorCode (Importance: 47.5)
+ 2. Value (Importance: 98.433)
+
+
+Output Files:
+- model_metrics_export.csv
+- feature_importance_export.csv
+- powerbi_data.xlsx
+- deployment_checklist.csv
+
+Next Steps:
+1. Import CSV/Excel into Power BI Desktop
+2. Create visuals (KPI cards, bar charts)
+3. Publish to Power BI Service
+4. Schedule weekly data refresh
+=====================================
+
