@@ -1,0 +1,70 @@
+{
+  "model_performance": [
+    {
+      "Model": "Logistic Regression",
+      "Accuracy": 0.5227,
+      "Precision": 0.5119,
+      "Recall": 0.9773,
+      "F1_Score": 0.6719,
+      "ROC_AUC": 0.532,
+      "Meets_Accuracy_Goal": "No",
+      "Meets_AUC_Goal": "No",
+      "AUC": 0.532,
+      "F1": 0.6719
+    },
+    {
+      "Model": "Decision Tree",
+      "Accuracy": 0.5,
+      "Precision": 0.5,
+      "Recall": 0.5909,
+      "F1_Score": 0.5417,
+      "ROC_AUC": 0.531,
+      "Meets_Accuracy_Goal": "No",
+      "Meets_AUC_Goal": "No",
+      "AUC": 0.531,
+      "F1": 0.5417
+    },
+    {
+      "Model": "Random Forest",
+      "Accuracy": 0.5455,
+      "Precision": 0.54,
+      "Recall": 0.6136,
+      "F1_Score": 0.5745,
+      "ROC_AUC": 0.5077,
+      "Meets_Accuracy_Goal": "No",
+      "Meets_AUC_Goal": "No",
+      "AUC": 0.5077,
+      "F1": 0.5745
+    },
+    {
+      "Model": "Naïve Bayes",
+      "Accuracy": 0.5,
+      "Precision": 0.5,
+      "Recall": 1,
+      "F1_Score": 0.6667,
+      "ROC_AUC": 0.4654,
+      "Meets_Accuracy_Goal": "No",
+      "Meets_AUC_Goal": "No",
+      "AUC": 0.4654,
+      "F1": 0.6667
+    }
+  ],
+  "feature_importance": [
+    {
+      "Feature": "IndicatorCode",
+      "Importance": 47.5001
+    },
+    {
+      "Feature": "Value",
+      "Importance": 98.4325
+    }
+  ],
+  "deployment_info": [
+    {
+      "deployment_date": "2025-10-14",
+      "model_version": "v1.0",
+      "data_source": "HDPSA Clean Dataset",
+      "refresh_frequency": "Weekly"
+    }
+  ]
+}

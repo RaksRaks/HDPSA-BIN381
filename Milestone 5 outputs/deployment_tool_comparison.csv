@@ -1,0 +1,5 @@
+Tool,Integration with R,Cost,Security,Scalability,User Experience,Learning Curve,Maintenance,Overall Score,Recommendation
+R Shiny,Excellent (Native R),Free (Open Source),Good (Server dependent),Good (Single server),Good (Interactive),Medium,Medium,8.5,Technical Demo
+Power BI,Good (CSV/API import),Paid (Per user/month),Excellent (Enterprise),Excellent (Cloud),Excellent (Drag-drop),Low,Low,9.2,Primary Choice
+Streamlit,Good (Python-based),Free (Open Source),Good (Server dependent),Good (Single server),Good (Simple),Low,Medium,7.8,Alternative
+Flask,Good (Python-based),Free (Open Source),Good (Custom implementation),Good (Scalable),Medium (Custom dev),High,High,7.0,Development Heavy
