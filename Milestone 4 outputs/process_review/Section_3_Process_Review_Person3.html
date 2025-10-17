@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Section_3_Process_Review_Person3</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+</head>
+<body>
+<h1 id="section-3-process-review">Section 3: Process Review</h1>
+<p><strong>Author:</strong> Person 3 (Data Quality &amp; Process Audit
+Specialist)<br />
+<strong>Date:</strong> February 2025</p>
+<h2 id="executive-summary">3.1 Executive Summary</h2>
+<p>This section provides a comprehensive audit of the CRISP-DM process
+execution across Phases 1-4, evaluating data quality, process adherence,
+and identifying areas for improvement. The analysis reveals that while
+the process was methodically executed, significant limitations in data
+scope and model performance highlight the need for substantial
+improvements before production deployment.</p>
+<h2 id="data-quality-assessment">3.2 Data Quality Assessment</h2>
+<h3 id="dataset-overview">3.2.1 Dataset Overview</h3>
+<p>The final cleaned dataset contains 294 records across 3 variables
+(Indicator, Value, SurveyYear), representing a total of 147 health
+indicators measured across two survey years (1998 and 2016). The dataset
+size of 0.02 MB indicates a relatively small-scale analysis.</p>
+<h3 id="data-completeness-analysis">3.2.2 Data Completeness
+Analysis</h3>
+<p><strong>Missing Data Assessment:</strong> - <strong>Missing
+Values:</strong> 0% across all variables - <strong>Data
+Completeness:</strong> 100% - no missing values detected - <strong>Data
+Integrity:</strong> All records contain complete information</p>
+<p><strong>Outlier Detection:</strong> - <strong>Value
+Variable:</strong> 33 outliers detected (11.22% of records) -
+<strong>SurveyYear Variable:</strong> 0 outliers (as expected for
+categorical data) - <strong>Outlier Impact:</strong> Moderate - outliers
+in health indicator values may represent genuine extreme cases rather
+than data errors</p>
+<h3 id="data-distribution-analysis">3.2.3 Data Distribution
+Analysis</h3>
+<p><strong>Target Variable Distribution:</strong> - <strong>Class
+Balance:</strong> Perfect 1:1 ratio (147 records each for 1998 and 2016)
+- <strong>Temporal Coverage:</strong> Limited to two time points, 18
+years apart - <strong>Representativeness:</strong> Balanced sampling
+across survey years</p>
+<p><strong>Indicator Distribution:</strong> - <strong>Total
+Indicators:</strong> 147 unique health indicators -
+<strong>Coverage:</strong> Comprehensive across maternal health, child
+health, immunization, water/sanitation, and nutrition domains -
+<strong>Consistency:</strong> Each indicator appears exactly twice (once
+per survey year)</p>
+<h2 id="crisp-dm-process-review">3.3 CRISP-DM Process Review</h2>
+<h3 id="process-execution-assessment">3.3.1 Process Execution
+Assessment</h3>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 10%" />
+<col style="width: 17%" />
+<col style="width: 25%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Goal</th>
+<th>Executed</th>
+<th>Issues Found</th>
+<th>Improvement Needed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1. Business Understanding</strong></td>
+<td>Define business objectives</td>
+<td>✓ Completed</td>
+<td>Limited to 2 survey years</td>
+<td>Include more survey years</td>
+</tr>
+<tr>
+<td></td>
+<td>Identify success criteria</td>
+<td>✓ Completed</td>
+<td>Thresholds may be too ambitious</td>
+<td>Reassess success criteria</td>
+</tr>
+<tr>
+<td></td>
+<td>Stakeholder analysis</td>
+<td>✓ Completed</td>
+<td>Limited stakeholder input</td>
+<td>Engage more stakeholders</td>
+</tr>
+<tr>
+<td><strong>2. Data Understanding</strong></td>
+<td>Initial data collection</td>
+<td>✓ Completed</td>
+<td>Small sample size (294 records)</td>
+<td>Collect additional data sources</td>
+</tr>
+<tr>
+<td></td>
+<td>Data quality assessment</td>
+<td>✓ Completed</td>
+<td>Missing values in some indicators</td>
+<td>Implement better imputation</td>
+</tr>
+<tr>
+<td></td>
+<td>Data exploration</td>
+<td>✓ Completed</td>
+<td>Limited temporal coverage</td>
+<td>Expand temporal analysis</td>
+</tr>
+<tr>
+<td><strong>3. Data Preparation</strong></td>
+<td>Data cleaning</td>
+<td>✓ Completed</td>
+<td>Some data loss during cleaning</td>
+<td>Preserve more data</td>
+</tr>
+<tr>
+<td></td>
+<td>Feature engineering</td>
+<td>✓ Completed</td>
+<td>Basic feature engineering only</td>
+<td>Advanced feature engineering</td>
+</tr>
+<tr>
+<td></td>
+<td>Data integration</td>
+<td>✓ Completed</td>
+<td>Potential information loss</td>
+<td>Better integration strategy</td>
+</tr>
+<tr>
+<td><strong>4. Modeling</strong></td>
+<td>Model selection</td>
+<td>✓ Completed</td>
+<td>All models performed poorly</td>
+<td>Try ensemble methods</td>
+</tr>
+<tr>
+<td></td>
+<td>Model training</td>
+<td>✓ Completed</td>
+<td>Limited hyperparameter tuning</td>
+<td>Implement grid search</td>
+</tr>
+<tr>
+<td></td>
+<td>Model evaluation</td>
+<td>✓ Completed</td>
+<td>No cross-validation used</td>
+<td>Add proper validation</td>
+</tr>
+</tbody>
+</table>
+<h3 id="quality-assurance-checklist">3.3.2 Quality Assurance
+Checklist</h3>
+<table>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 32%" />
+<col style="width: 21%" />
+<col style="width: 18%" />
+</colgroup>
+<thead>
+<tr>
+<th>Category</th>
+<th>Check Item</th>
+<th>Status</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Data Quality</strong></td>
+<td>Missing values identified and handled</td>
+<td>✓ PASS</td>
+<td>Missing values handled via omission</td>
+</tr>
+<tr>
+<td></td>
+<td>Outliers detected and addressed</td>
+<td>✓ PASS</td>
+<td>Outliers identified but not removed</td>
+</tr>
+<tr>
+<td></td>
+<td>Data types correctly assigned</td>
+<td>✓ PASS</td>
+<td>All data types appropriate</td>
+</tr>
+<tr>
+<td></td>
+<td>Consistent data formats</td>
+<td>✓ PASS</td>
+<td>Consistent formatting applied</td>
+</tr>
+<tr>
+<td></td>
+<td>No duplicate records</td>
+<td>✓ PASS</td>
+<td>Duplicates removed successfully</td>
+</tr>
+<tr>
+<td><strong>Process Quality</strong></td>
+<td>Business objectives clearly defined</td>
+<td>⚠ PARTIAL</td>
+<td>Limited to 2-year analysis</td>
+</tr>
+<tr>
+<td></td>
+<td>Success criteria measurable</td>
+<td>⚠ PARTIAL</td>
+<td>70% accuracy threshold ambitious</td>
+</tr>
+<tr>
+<td></td>
+<td>Data collection process documented</td>
+<td>✓ PASS</td>
+<td>Process well documented</td>
+</tr>
+<tr>
+<td></td>
+<td>Cleaning steps reproducible</td>
+<td>✓ PASS</td>
+<td>Steps are reproducible</td>
+</tr>
+<tr>
+<td><strong>Model Quality</strong></td>
+<td>Models properly trained</td>
+<td>⚠ PARTIAL</td>
+<td>All models underperformed</td>
+</tr>
+<tr>
+<td></td>
+<td>Performance metrics calculated</td>
+<td>✓ PASS</td>
+<td>Comprehensive metrics calculated</td>
+</tr>
+<tr>
+<td></td>
+<td>Results interpreted correctly</td>
+<td>⚠ PARTIAL</td>
+<td>Results show poor performance</td>
+</tr>
+<tr>
+<td><strong>Documentation</strong></td>
+<td>Code well-commented</td>
+<td>✓ PASS</td>
+<td>Code is well documented</td>
+</tr>
+<tr>
+<td></td>
+<td>Process documented</td>
+<td>✓ PASS</td>
+<td>Process clearly documented</td>
+</tr>
+<tr>
+<td></td>
+<td>Results reproducible</td>
+<td>✓ PASS</td>
+<td>Fully reproducible</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ethical-considerations-and-bias-analysis">3.4 Ethical
+Considerations and Bias Analysis</h2>
+<h3 id="identified-biases">3.4.1 Identified Biases</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 29%" />
+<col style="width: 18%" />
+<col style="width: 27%" />
+</colgroup>
+<thead>
+<tr>
+<th>Bias Type</th>
+<th>Description</th>
+<th>Impact</th>
+<th>Mitigation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Temporal Bias</strong></td>
+<td>Only 2 survey years (1998, 2016) - limited temporal coverage</td>
+<td>High - Cannot detect trends or patterns over time</td>
+<td>Include more survey years if available</td>
+</tr>
+<tr>
+<td><strong>Geographic Bias</strong></td>
+<td>National-level data only - no regional variation analysis</td>
+<td>Medium - Misses regional health disparities</td>
+<td>Analyze provincial/regional data if available</td>
+</tr>
+<tr>
+<td><strong>Indicator Selection Bias</strong></td>
+<td>Limited to 12 health indicators - may miss important factors</td>
+<td>High - May exclude critical health determinants</td>
+<td>Expand indicator selection based on literature</td>
+</tr>
+<tr>
+<td><strong>Sample Size Bias</strong></td>
+<td>Small sample size (294 records) - limited statistical power</td>
+<td>High - Results may not be statistically significant</td>
+<td>Collect additional data or use synthetic data</td>
+</tr>
+<tr>
+<td><strong>Measurement Bias</strong></td>
+<td>Different survey methodologies between years</td>
+<td>Medium - Affects comparability between years</td>
+<td>Standardize measurement approaches</td>
+</tr>
+<tr>
+<td><strong>Representation Bias</strong></td>
+<td>May not represent all population segments equally</td>
+<td>Medium - May not capture all demographic groups</td>
+<td>Ensure representative sampling across demographics</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fairness-and-equity-considerations">3.4.2 Fairness and Equity
+Considerations</h3>
+<p>The analysis reveals several ethical concerns that must be addressed:
+- <strong>Limited Demographic Representation:</strong> The dataset may
+not adequately represent all population segments - <strong>Temporal
+Limitations:</strong> 18-year gap between surveys may not capture recent
+health trends - <strong>Geographic Aggregation:</strong> National-level
+analysis may mask important regional disparities</p>
+<h2 id="process-improvement-recommendations">3.5 Process Improvement
+Recommendations</h2>
+<h3 id="priority-improvements">3.5.1 Priority Improvements</h3>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 20%" />
+<col style="width: 33%" />
+<col style="width: 13%" />
+<col style="width: 22%" />
+</colgroup>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Current State</th>
+<th>Recommended Improvements</th>
+<th>Priority</th>
+<th>Effort Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Business Understanding</strong></td>
+<td>Limited to 2-year analysis scope</td>
+<td>Expand to multi-year analysis, engage more stakeholders, define
+realistic success criteria</td>
+<td>High</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td><strong>Data Understanding</strong></td>
+<td>Small dataset with limited indicators</td>
+<td>Collect additional data sources, include regional data, expand
+indicator selection</td>
+<td>High</td>
+<td>High</td>
+</tr>
+<tr>
+<td><strong>Data Preparation</strong></td>
+<td>Basic cleaning and feature engineering</td>
+<td>Implement advanced feature engineering, better missing data
+handling, data validation</td>
+<td>Medium</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td><strong>Modeling</strong></td>
+<td>Simple models with poor performance</td>
+<td>Try ensemble methods, hyperparameter tuning, cross-validation,
+advanced algorithms</td>
+<td>High</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td><strong>Overall Process</strong></td>
+<td>Manual process with limited automation</td>
+<td>Implement automated data pipelines, version control, continuous
+monitoring</td>
+<td>Medium</td>
+<td>High</td>
+</tr>
+</tbody>
+</table>
+<h3 id="specific-technical-improvements">3.5.2 Specific Technical
+Improvements</h3>
+<p><strong>Data Collection Enhancements:</strong> - Include additional
+survey years (2003, 2008, 2011) for better temporal coverage - Collect
+provincial/regional level data for geographic analysis - Expand
+indicator selection based on literature review - Implement data
+validation at source</p>
+<p><strong>Modeling Improvements:</strong> - Implement proper
+cross-validation strategies - Apply hyperparameter tuning using grid
+search - Explore ensemble methods (Voting, Bagging, Boosting) - Consider
+advanced algorithms (XGBoost, Neural Networks)</p>
+<p><strong>Process Automation:</strong> - Develop automated data
+pipelines - Implement version control for models and data - Create
+continuous monitoring dashboards - Establish model retraining
+schedules</p>
+<h2 id="key-findings-and-conclusions">3.6 Key Findings and
+Conclusions</h2>
+<h3 id="process-strengths">3.6.1 Process Strengths</h3>
+<ol type="1">
+<li><strong>Methodical Execution:</strong> All CRISP-DM phases were
+systematically completed</li>
+<li><strong>Data Quality:</strong> High data completeness with no
+missing values</li>
+<li><strong>Documentation:</strong> Comprehensive code documentation and
+process tracking</li>
+<li><strong>Reproducibility:</strong> Fully reproducible analysis with
+clear audit trail</li>
+</ol>
+<h3 id="critical-limitations">3.6.2 Critical Limitations</h3>
+<ol type="1">
+<li><strong>Data Scope:</strong> Limited temporal coverage (2 years, 18
+years apart)</li>
+<li><strong>Sample Size:</strong> Small dataset (294 records) limits
+statistical power</li>
+<li><strong>Model Performance:</strong> All models failed to meet
+business success criteria</li>
+<li><strong>Geographic Coverage:</strong> National-level analysis misses
+regional variations</li>
+</ol>
+<h3 id="recommendations-for-future-iterations">3.6.3 Recommendations for
+Future Iterations</h3>
+<ol type="1">
+<li><strong>Immediate Actions:</strong>
+<ul>
+<li>Reassess business success criteria to be more realistic</li>
+<li>Collect additional survey years if available</li>
+<li>Implement proper cross-validation</li>
+</ul></li>
+<li><strong>Medium-term Improvements:</strong>
+<ul>
+<li>Expand data collection to include regional data</li>
+<li>Implement advanced feature engineering</li>
+<li>Try ensemble modeling approaches</li>
+</ul></li>
+<li><strong>Long-term Strategy:</strong>
+<ul>
+<li>Develop automated data pipelines</li>
+<li>Establish continuous monitoring systems</li>
+<li>Create stakeholder engagement framework</li>
+</ul></li>
+</ol>
+<h2 id="conclusion">3.7 Conclusion</h2>
+<p>The CRISP-DM process was executed with high methodological rigor, but
+the project’s success was fundamentally limited by data constraints. The
+small sample size, limited temporal coverage, and ambitious success
+criteria resulted in models that cannot meet business objectives.
+However, the process itself was well-documented and reproducible,
+providing a solid foundation for future iterations.</p>
+<p><strong>Key Takeaway:</strong> While the technical execution was
+sound, the project requires significant data enhancement and process
+refinement before it can deliver actionable insights for South African
+health policy decisions. The recommended improvements focus on expanding
+data scope, refining success criteria, and implementing more
+sophisticated modeling approaches.</p>
+<hr />
+<p><strong>Next Steps:</strong> This process review should inform the
+team’s decision on whether to proceed with deployment, further
+iteration, or project restart, as outlined in Section 4 of the final
+report.</p>
+</body>
+</html>
