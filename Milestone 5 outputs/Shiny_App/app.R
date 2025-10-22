@@ -308,9 +308,19 @@ server <- function(input, output, session) {
   # Predictions Tab Outputs
   prediction_result <- reactive({
     if(input$predict_btn > 0) {
-      # Create prediction input
+      # Create mapping from indicator names to codes
+      # Since the model expects IndicatorCode as numeric, we'll use a simple mapping
+      indicator_mapping <- data.frame(
+        Indicator = unique(final_dataset$Indicator),
+        IndicatorCode = 1:length(unique(final_dataset$Indicator))
+      )
+      
+      # Get the indicator code for the selected indicator
+      selected_indicator_code <- indicator_mapping$IndicatorCode[indicator_mapping$Indicator == input$indicator_input]
+      
+      # Create prediction input with correct column names
       pred_input <- data.frame(
-        Indicator = input$indicator_input,
+        IndicatorCode = selected_indicator_code,
         Value = input$value_input
       )
       
